@@ -16,22 +16,24 @@
         }
         .video-container {
             position: relative;
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
             overflow: hidden;
-            padding-top: 33.75%; /* 16:9 aspect ratio */
+            padding-top: 56.25%; /* 16:9 aspect ratio */
         }
         .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
         p {
             color: #666;
             margin-top: 20px;
             line-height: 1.6;
-            text-align: center;
         }
-        button {
+        .continue-button {
             background-color: #008CBA;
             color: white;
             padding: 10px 20px;
@@ -39,11 +41,14 @@
             cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
-            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
 <body>
+    <a href="second_page.html" class="continue-button">Continue</a>
     <h1>In Memory of Sudha</h1>
     <div class="video-container">
         <video autoplay loop muted>
@@ -77,6 +82,5 @@
         Memories dance, a bittersweet refrain,<br>
         Sudha, forever loved, forever in my heart you'll remain.
     </p>
-    <button onclick="window.location.href='second_page.html'">Continue</button>
 </body>
 </html>
